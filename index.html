@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GLOWA: O Método de Transformação Feminina</title>
-<meta name="description" content="GLOWA: método completo de autocuidado, estética e presença feminina. Transforme a forma como você se vê e como o mundo te percebe.">
+<meta name="description" content="GLOWA: método completo de autocuidado, estética, presença e mentalidade feminina, com lei da atração e lei da suposição. Transforme a forma como você se vê e como o mundo te percebe.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1279,6 +1279,195 @@
   }
   .voice-note audio { display: none; }
 
+  /* ========== HERO · linha da mente ========== */
+  .hero-mind {
+    max-width: 520px;
+    margin: 14px auto 0;
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(1.45rem, 3.6vw, 1.9rem);
+    line-height: 1.2;
+    color: var(--pink-mid);
+  }
+
+  /* ========== MODULE LINK ========== */
+  .module-card__link {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--pink-deep);
+    border-bottom: 1px solid var(--pink);
+    padding-bottom: 2px;
+    transition: color 0.25s ease, border-color 0.25s ease;
+  }
+  .module-card__link:hover { color: var(--pink-mid); border-color: var(--pink-mid); }
+
+  /* ========== GIGI · PODER DA MENTE ========== */
+  .gigi { background: var(--blush); scroll-margin-top: 70px; }
+  .gigi__head { text-align: center; margin-bottom: 56px; }
+  .gigi__script {
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(2.2rem, 6vw, 3.4rem);
+    line-height: 1.1;
+    color: var(--pink-mid);
+    margin: 10px 0 6px;
+  }
+  .gigi__head .section-title { max-width: 720px; margin-inline: auto; }
+  .gigi__head .lede { margin: 16px auto 0; text-align: center; max-width: 620px; }
+
+  .gigi__grid {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .gigi__profile { text-align: center; position: sticky; top: 90px; }
+  .gigi__photo { aspect-ratio: 3 / 4; overflow: hidden; background: var(--pink-soft); margin-bottom: 30px; }
+  .gigi__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+  .gigi__placeholder {
+    position: absolute; inset: 0; align-items: center; justify-content: center;
+    color: var(--ink-muted); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .gigi__name { font-family: "Great Vibes", cursive; font-size: 3rem; line-height: 1; color: var(--pink-deep); }
+  .gigi__role {
+    margin-top: 8px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .gigi__bio { margin-top: 14px; font-size: 14px; line-height: 1.65; color: var(--ink-soft); }
+  .gigi__chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 18px; }
+  .gigi__chips span {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+    color: var(--pink-deep);
+    background: var(--white);
+    border: 1px solid var(--border-soft);
+    border-radius: 999px;
+    padding: 6px 12px;
+  }
+
+  .gigi-tabs {
+    background: var(--white);
+    border: 1px solid var(--border-soft);
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(42, 31, 36, 0.06);
+    overflow: hidden;
+  }
+  .gigi-tablist {
+    display: flex; gap: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    border-bottom: 1px solid var(--border-soft);
+    background: var(--cream);
+    scrollbar-width: none;
+  }
+  .gigi-tablist::-webkit-scrollbar { display: none; }
+  .gigi-tab {
+    flex: 0 0 auto;
+    min-height: 42px;
+    padding: 0 18px;
+    font: inherit; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--ink-soft);
+    background: var(--white);
+    border: 1px solid var(--border-soft);
+    border-radius: 999px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .gigi-tab:hover { color: var(--pink-deep); border-color: var(--pink); }
+  .gigi-tab:focus-visible { outline: 2px solid var(--pink-mid); outline-offset: 2px; }
+  .gigi-tab.is-active {
+    color: #fff;
+    background: linear-gradient(180deg, var(--pink-mid), var(--pink-deep));
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(184, 92, 120, 0.26);
+  }
+  .gigi-panels { padding: clamp(24px, 4vw, 44px); }
+  .gigi-panel { display: none; }
+  .gigi-panel.is-active { display: block; animation: gigiIn 0.55s var(--ease); }
+  @keyframes gigiIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  .gigi-panel__kicker {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--pink-deep);
+  }
+  .gigi-panel__title {
+    margin-top: 10px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+    line-height: 1.15;
+    font-variant-numeric: lining-nums;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .gigi-panel__text { margin-top: 16px; }
+  .gigi-panel__text p { font-size: 15px; line-height: 1.75; color: var(--ink-soft); }
+  .gigi-panel__text p + p { margin-top: 12px; }
+  .gigi-panel__label {
+    margin-top: 26px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--gold);
+  }
+  .gigi-panel__list { list-style: none; margin-top: 10px; }
+  .gigi-panel__list li {
+    position: relative;
+    padding: 12px 0 12px 28px;
+    border-bottom: 1px solid var(--border-soft);
+    font-size: 14.5px; line-height: 1.55; color: var(--ink-soft);
+  }
+  .gigi-panel__list li:last-child { border-bottom: none; }
+  .gigi-panel__list li::before {
+    content: "✦";
+    position: absolute; left: 4px; top: 12px;
+    font-size: 12px; color: var(--gold);
+  }
+  .gigi-panel__quote {
+    margin-top: 26px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border-soft);
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(1.8rem, 4.4vw, 2.4rem);
+    line-height: 1.2;
+    color: var(--pink-deep);
+  }
+  .gigi-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 22px; }
+  .gigi-step {
+    background: var(--blush);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    padding: 18px 16px;
+  }
+  .gigi-step__n {
+    display: block; margin-bottom: 8px;
+    font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--pink-deep);
+  }
+  .gigi-step strong {
+    display: block;
+    font-family: "Cormorant Garamond", serif; font-size: 1.35rem; font-weight: 600; color: var(--ink);
+  }
+  .gigi-step p { margin-top: 6px; font-size: 13px; line-height: 1.55; color: var(--ink-soft); }
+  .gigi-rituals { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .gigi-rituals span {
+    font-size: 12px; font-weight: 600; color: var(--pink-deep);
+    background: var(--pink-soft);
+    border-radius: 999px;
+    padding: 8px 14px;
+  }
+  .gigi__disclaimer {
+    max-width: 560px; margin: 36px auto 0;
+    text-align: center;
+    font-size: 12px; line-height: 1.6; color: var(--ink-muted);
+  }
+  @media (max-width: 900px) {
+    .gigi__grid { grid-template-columns: 1fr; gap: 40px; }
+    .gigi__profile { position: static; max-width: 320px; margin-inline: auto; }
+  }
+  @media (max-width: 640px) {
+    .gigi-steps { grid-template-columns: 1fr; }
+    .gigi-tablist { padding: 12px; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
@@ -1298,6 +1487,7 @@
     <ul class="navbar__links">
       <li><a href="#metodo">Método</a></li>
       <li><a href="#conteudo">Conteúdo</a></li>
+      <li><a href="#gigi">Gigi</a></li>
       <li><a href="#bonus">Bônus</a></li>
       <li><a href="#oferta">Oferta</a></li>
       <li><a href="#faq">FAQ</a></li>
@@ -1319,6 +1509,7 @@
   <ul class="mobile-menu__links">
     <li><a href="#metodo">Método</a></li>
     <li><a href="#conteudo">Conteúdo</a></li>
+    <li><a href="#gigi">Gigi · Poder da mente</a></li>
     <li><a href="#bonus">Bônus</a></li>
     <li><a href="#oferta">Oferta</a></li>
     <li><a href="#faq">FAQ</a></li>
@@ -1339,8 +1530,9 @@
       <em>e não gostar do que vê.</em>
     </h1>
     <p class="hero-description reveal-fade" data-delay="600">
-      O método completo de pele, cabelo, estilo e presença para a mulher que decidiu parar de se sentir “menos” e começar a se sentir desejada, confiante e irresistível.
+      O método completo de pele, cabelo, estilo, presença e mentalidade para a mulher que decidiu parar de se sentir “menos” e começar a se sentir desejada, confiante e irresistível.
     </p>
+    <p class="hero-mind reveal-fade" data-delay="700">com lei da atração, lei da suposição e o poder de assumir a sua melhor versão</p>
     <div class="hero-cta reveal-fade" data-delay="800">
       <a href="https://pay.cakto.com.br/cxoxpq5_1126580?affiliate=byrWzJqi" class="btn" target="_blank" rel="noopener">
         EU QUERO MEU GLOW UP AGORA →
@@ -1355,7 +1547,7 @@
     <div class="eyebrow reveal-line">O método GLOWA</div>
     <h2 class="section-title reveal-line">Você não precisa de mais dicas. Precisa de um sistema que funcione.</h2>
     <p class="lede reveal-fade">
-      Enquanto outras mulheres só postam filtro, o GLOWA te entrega o passo a passo real: pele, cabelo, corpo, estilo e presença, na ordem certa, sem achismo e sem enrolação.
+      Enquanto outras mulheres só postam filtro, o GLOWA te entrega o passo a passo real: pele, cabelo, corpo, estilo, presença e a mente que sustenta tudo isso, na ordem certa, sem achismo e sem enrolação.
     </p>
 
     <div class="method-social-proof" style="margin-top:48px;">
@@ -1444,8 +1636,9 @@
       </div>
       <div class="module-card reveal-fade">
         <div class="module-card__num">06</div>
-        <div class="module-card__title">A mentalidade de quem se prioriza</div>
-        <p class="module-card__text">Beleza sem confiança não segura. A rotina mental e emocional que faz você se olhar no espelho e finalmente sentir: “eu mereço me sentir assim”.</p>
+        <div class="module-card__title">Mentalidade, lei da atração e suposição</div>
+        <p class="module-card__text">Beleza sem confiança não segura. Com a Gigi você aprende a lei da atração, a lei da suposição e a assumir a versão de você que quer viver, para se olhar no espelho e finalmente sentir: “eu mereço me sentir assim”.</p>
+        <a href="#gigi" class="module-card__link">Conheça o módulo da Gigi →</a>
       </div>
       <div class="module-card reveal-fade">
         <div class="module-card__num">07</div>
@@ -1460,11 +1653,103 @@
       <div class="module-card reveal-fade">
         <div class="module-card__num">09</div>
         <div class="module-card__title">O plano de manutenção do glow</div>
-        <p class="module-card__text">Como manter os resultados depois dos 21 dias. Sistema simples pra não voltar pro ciclo de “comecei e parei”.</p>
+        <p class="module-card__text">O protocolo de 21 dias de manifestação e um sistema simples para manter os resultados e não voltar pro ciclo de “comecei e parei”.</p>
       </div>
     </div>
     <div class="section-cta reveal-fade">
       <a href="https://pay.cakto.com.br/cxoxpq5_1126580?affiliate=byrWzJqi" class="btn" target="_blank" rel="noopener">EU MEREÇO ME VALORIZAR →</a>
+    </div>
+  </div>
+</section>
+
+<!-- GIGI · PODER DA MENTE -->
+<section class="gigi" id="gigi">
+  <div class="wrap">
+    <div class="gigi__head">
+      <div class="eyebrow reveal-line">Com a Gigi · Poder da mente</div>
+      <div class="gigi__script reveal-fade">o glow up começa na mente</div>
+      <h2 class="section-title reveal-line">Lei da atração, lei da suposição e a mulher que você decide ser.</h2>
+      <p class="lede reveal-fade">Antes de a pele, o cabelo e o estilo mudarem, muda a versão de você que você sustenta por dentro. A Gigi ensina como a mente molda a realidade e como assumir, todos os dias, a mulher que você quer viver.</p>
+    </div>
+
+    <div class="gigi__grid">
+      <aside class="gigi__profile reveal-fade">
+        <div class="gigi__photo ornate-frame">
+          <img src="src/img/gigi.jpg" alt="Gigi, especialista em lei da atração e lei da suposição" loading="lazy"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="gigi__placeholder" style="display:none;">[ Foto da Gigi ]</div>
+        </div>
+        <div class="gigi__name">Gigi</div>
+        <div class="gigi__role">Lei da Atração, Lei da Suposição, Poder da Mente</div>
+        <p class="gigi__bio">Gigi ensina como a mente molda a realidade e o poder de assumir a versão de si mesma que você deseja, porque isso muda a forma como você se vê, se sente e se apresenta. Glow up de verdade começa por dentro.</p>
+        <div class="gigi__chips"><span>Atração</span><span>Suposição</span><span>Universo</span><span>Manifestação</span></div>
+      </aside>
+
+      <div class="gigi-tabs reveal-fade" data-gigi-tabs>
+        <div class="gigi-tablist" role="tablist" aria-label="Ensinamentos da Gigi">
+          <button class="gigi-tab is-active" role="tab" id="gt-0" aria-selected="true" aria-controls="gp-0" tabindex="0" type="button">Lei da atração</button>
+          <button class="gigi-tab" role="tab" id="gt-1" aria-selected="false" aria-controls="gp-1" tabindex="-1" type="button">Lei da suposição</button>
+          <button class="gigi-tab" role="tab" id="gt-2" aria-selected="false" aria-controls="gp-2" tabindex="-1" type="button">Universo</button>
+          <button class="gigi-tab" role="tab" id="gt-3" aria-selected="false" aria-controls="gp-3" tabindex="-1" type="button">Transmutar a realidade</button>
+          <button class="gigi-tab" role="tab" id="gt-4" aria-selected="false" aria-controls="gp-4" tabindex="-1" type="button">Protocolo 21 dias</button>
+        </div>
+        <div class="gigi-panels">
+          <div class="gigi-panel is-active" role="tabpanel" id="gp-0" aria-labelledby="gt-0">
+            <div class="gigi-panel__kicker">Lei da atração</div>
+            <h3 class="gigi-panel__title">O que você sente, você atrai.</h3>
+            <div class="gigi-panel__text"><p>A lei da atração parte de uma ideia simples: o seu foco e o seu estado emocional moldam o que você percebe, escolhe e vive. Quem vive em falta enxerga falta. Quem vive em merecimento enxerga oportunidade, abre portas e age diferente.</p><p>Você não precisa forçar nada. Precisa escolher, todos os dias, o que sente e onde coloca a sua atenção.</p></div>
+            <div class="gigi-panel__label">Na prática</div>
+            <ul class="gigi-panel__list"><li>Troque o “eu não tenho” por “eu estou me tornando”.</li><li>Escolha 3 sentimentos que você quer carregar o dia inteiro.</li><li>Cuide do que você consome e de com quem você convive.</li></ul>
+            <div class="gigi-panel__quote">Eu sou ímã de tudo o que eu mereço.</div>
+          </div>
+          <div class="gigi-panel" role="tabpanel" id="gp-1" aria-labelledby="gt-1" hidden>
+            <div class="gigi-panel__kicker">Lei da suposição</div>
+            <h3 class="gigi-panel__title">Assuma. Depois aja como ela.</h3>
+            <div class="gigi-panel__text"><p>A lei da suposição, popularizada por Neville Goddard, diz que aquilo que você assume como verdade sobre si, de forma firme e constante, tende a virar a sua realidade. Não é esperar acontecer. É decidir quem você é agora e sustentar essa versão no pensamento, na fala e nas atitudes.</p><p>Por isso a Gigi ensina a escrever, sentir e viver no presente, como quem já é.</p></div>
+            <div class="gigi-panel__label">Na prática</div>
+            <ul class="gigi-panel__list"><li>Escreva no presente quem você é (scripting).</li><li>Fique 5 minutos no sentimento de já ter.</li><li>Faça hoje o que ela faria: skincare, look, postura e conversa.</li></ul>
+            <div class="gigi-panel__quote">Eu já sou ela.</div>
+          </div>
+          <div class="gigi-panel" role="tabpanel" id="gp-2" aria-labelledby="gt-2" hidden>
+            <div class="gigi-panel__kicker">O universo</div>
+            <h3 class="gigi-panel__title">O universo responde à sua frequência.</h3>
+            <div class="gigi-panel__text"><p>Para a Gigi, o universo funciona como um espelho: ele devolve o que você sustenta por dentro. Intenção clara, confiança no processo e ação inspirada abrem caminhos que você nem imaginava.</p><p>Você pede com clareza, solta o “como” e o “quando” e dá o próximo passo que aparece na sua frente.</p></div>
+            <div class="gigi-panel__label">Na prática</div>
+            <ul class="gigi-panel__list"><li>Defina uma intenção clara e específica.</li><li>Solte o como e confie no tempo das coisas.</li><li>Agradeça antes de ver, como quem já recebeu.</li></ul>
+            <div class="gigi-panel__quote">Obrigada, universo. Já é meu.</div>
+          </div>
+          <div class="gigi-panel" role="tabpanel" id="gp-3" aria-labelledby="gt-3" hidden>
+            <div class="gigi-panel__kicker">Transmutar a realidade</div>
+            <h3 class="gigi-panel__title">Mude a imagem interna. O espelho acompanha.</h3>
+            <div class="gigi-panel__text"><p>Transmutar a realidade é parar de brigar com o que você vê e mudar a imagem que você sustenta de si. Quando você se enxerga como a mulher magnética, cuidada e segura, passa a se vestir, andar, falar e se cuidar como ela.</p><p>E é isso que as pessoas, as fotos e o espelho começam a refletir. A mente sustenta a nova versão e o método GLOWA é a prova diária.</p></div>
+            <div class="gigi-panel__label">Na prática</div>
+            <ul class="gigi-panel__list"><li>Ritual do espelho de 3 minutos, todos os dias.</li><li>Elogie 3 coisas que você já ama em você.</li><li>Una a mente à rotina: pele, cabelo, estilo e postura.</li></ul>
+            <div class="gigi-panel__quote">Eu me vejo como ela, e o espelho me acompanha.</div>
+          </div>
+          <div class="gigi-panel" role="tabpanel" id="gp-4" aria-labelledby="gt-4" hidden>
+            <div class="gigi-panel__kicker">Protocolo de 21 dias</div>
+            <h3 class="gigi-panel__title">Três semanas para assumir a sua nova versão.</h3>
+            <div class="gigi-panel__text">
+              <p>Um ritual diário de poucos minutos para firmar a nova identidade. É a base para manter o glow depois que o método termina.</p>
+            </div>
+            <div class="gigi-steps">
+              <div class="gigi-step"><span class="gigi-step__n">Semana 1</span><strong>Decidir</strong><p>Defina quem você é agora e escreva a sua frase de poder.</p></div>
+              <div class="gigi-step"><span class="gigi-step__n">Semana 2</span><strong>Sentir</strong><p>Visualização, scripting e gratidão todos os dias.</p></div>
+              <div class="gigi-step"><span class="gigi-step__n">Semana 3</span><strong>Sustentar</strong><p>Aja como ela em tudo e registre as provas que aparecem.</p></div>
+            </div>
+            <div class="gigi-panel__label">Os 5 rituais diários</div>
+            <div class="gigi-rituals">
+              <span>Afirmações</span><span>Scripting</span><span>Visualização</span><span>Gratidão</span><span>Agir como ela</span>
+            </div>
+            <div class="gigi-panel__quote">Todo dia, sem pular. Constância bate intensidade.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="gigi__disclaimer reveal-fade">Conteúdo de desenvolvimento pessoal e mentalidade. Caminha junto com a rotina de cuidado e não substitui acompanhamento médico, psicológico ou dermatológico.</p>
+    <div class="section-cta reveal-fade">
+      <a href="https://pay.cakto.com.br/cxoxpq5_1126580?affiliate=byrWzJqi" class="btn" target="_blank" rel="noopener">QUERO O MÉTODO COMPLETO COM A GIGI →</a>
     </div>
   </div>
 </section>
@@ -1655,29 +1940,13 @@
         <span class="problem-line__num">04</span>
         <span>Você sabe que poderia se sentir mais bonita, mais desejada, mais confiante. Mas não sabe por onde começar de verdade.</span>
       </div>
+      <div class="problem-line">
+        <span class="problem-line__num">05</span>
+        <span>Você cuida por fora, mas por dentro ainda se vê como a mulher de antes. E é essa imagem interna que sustenta tudo o que você vive.</span>
+      </div>
     </div>
     <div class="section-cta reveal-fade">
       <a href="https://pay.cakto.com.br/cxoxpq5_1126580?affiliate=byrWzJqi" class="btn" target="_blank" rel="noopener">CHEGA DE ME DEIXAR POR ÚLTIMO</a>
-    </div>
-  </div>
-</section>
-
-<!-- ESPECIALISTA GIGI -->
-<section class="mentor">
-  <div class="wrap team" style="margin-top:0; margin-bottom:0;">
-    <h3 class="team__title reveal-line">Especialista GLOWA</h3>
-    <p class="team__subtitle reveal-fade">Quem caminha com você no poder da mente, lei da atração e lei da suposição.</p>
-    <div class="team-grid" style="grid-template-columns: 1fr; max-width: 320px;">
-      <article class="team-card reveal-fade">
-        <div class="team-card__photo">
-          <img src="src/img/gigi.jpg" alt="Gigi, especialista em lei da atração e lei da suposição" loading="lazy">
-        </div>
-        <div class="team-card__body">
-          <div class="team-card__name">Gigi</div>
-          <div class="team-card__role">Lei da Atração, Lei da Suposição, Poder da Mente</div>
-          <p class="team-card__text">Gigi ensina como a mente molda a realidade. Lei da atração, lei da suposição e o poder de assumir a versão de si mesma que você deseja, porque isso muda a forma como você se vê, se sente e se apresenta. Glow up de verdade começa por dentro.</p>
-        </div>
-      </article>
     </div>
   </div>
 </section>
@@ -1738,7 +2007,7 @@
         <div class="offer__installments">pagamento à vista</div>
         <div class="offer__urgency">⏰ Oferta por tempo limitado · Vagas reduzidas</div>
         <ul class="offer__list">
-          <li>Método GLOWA completo (9 módulos)</li>
+          <li>Método GLOWA completo (9 módulos, com o módulo da Gigi)</li>
           <li>Guia de Skincare por Tipo de Pele</li>
           <li>Cronograma Capilar Feminino</li>
           <li>Biblioteca de Looks do Dia a Dia</li>
@@ -1876,6 +2145,9 @@
     { question: "Como vou acessar o GLOWA depois da compra?", answer: "Após a confirmação do pagamento, os dados de acesso serão enviados para o e-mail informado na compra. Use um e-mail válido e confira também a caixa de spam." },
     { question: "Como o método funciona na prática?", answer: "O GLOWA foi pensado para transformar conhecimento em ação. Você terá acesso a videoaulas, protocolos práticos e orientações de hábitos de autocuidado focados em pele, cabelo, estilo, maquiagem e presença." },
     { question: "Em quanto tempo posso perceber mudanças?", answer: "Depende do seu ponto de partida e da consistência. Algumas mudanças de rotina e apresentação aparecem mais rápido. Outras, como pele e cabelo, pedem continuidade." },
+    { question: "O que são a lei da atração e a lei da suposição no GLOWA?", answer: "É o módulo de mentalidade conduzido pela Gigi. Você aprende a assumir a versão de si mesma que deseja, com rituais simples como afirmações, scripting, visualização e gratidão, incluindo o protocolo de 21 dias." },
+    { question: "Preciso acreditar na lei da atração para aplicar o método?", answer: "Não. A parte prática de pele, cabelo, estilo e presença funciona por si só. O módulo da Gigi soma como desenvolvimento pessoal, no seu ritmo. Aplique o que fizer sentido para você." },
+    { question: "O módulo da Gigi substitui o cuidado com pele e cabelo?", answer: "Não. Os dois lados caminham juntos: a mentalidade sustenta a nova versão e a rotina de cuidado é a prova diária. O conteúdo também não substitui acompanhamento médico, psicológico ou dermatológico." },
     { question: "Preciso já saber de skincare ou maquiagem?", answer: "Não. O GLOWA foi organizado para quem está começando e também para quem já tenta se cuidar, mas ainda se sente perdida." },
     { question: "O GLOWA é só para mulheres?", answer: "Sim. O método foi criado especialmente para o público feminino, com linguagem, exemplos e foco nas necessidades das mulheres." },
     { question: "Vou precisar gastar muito em produtos?", answer: "Não necessariamente. O foco é te ensinar a escolher melhor e usar o que já faz sentido para a sua pele e o seu orçamento." },
@@ -2097,6 +2369,43 @@
     }
     track.addEventListener('pointerup', endDrag);
     track.addEventListener('pointercancel', endDrag);
+  })();
+
+  /* ========== Gigi: abas (lei da atração, suposição, universo...) ========== */
+  (function () {
+    const root = document.querySelector('[data-gigi-tabs]');
+    if (!root) return;
+    const list = root.querySelector('.gigi-tablist');
+    const tabs = Array.from(root.querySelectorAll('.gigi-tab'));
+    const panels = Array.from(root.querySelectorAll('.gigi-panel'));
+
+    function select(i, focus) {
+      tabs.forEach((t, k) => {
+        const on = k === i;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+      });
+      panels.forEach((p, k) => {
+        const on = k === i;
+        p.classList.toggle('is-active', on);
+        p.hidden = !on;
+      });
+      const t = tabs[i];
+      list.scrollTo({ left: t.offsetLeft - (list.clientWidth - t.offsetWidth) / 2, behavior: 'smooth' });
+      if (focus) t.focus();
+    }
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => select(i));
+      t.addEventListener('keydown', (e) => {
+        let n = null;
+        if (e.key === 'ArrowRight') n = (i + 1) % tabs.length;
+        else if (e.key === 'ArrowLeft') n = (i - 1 + tabs.length) % tabs.length;
+        else if (e.key === 'Home') n = 0;
+        else if (e.key === 'End') n = tabs.length - 1;
+        if (n !== null) { e.preventDefault(); select(n, true); }
+      });
+    });
   })();
 
   /* ========== Voice note (WhatsApp-style) ========== */
